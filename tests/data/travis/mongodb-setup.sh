@@ -11,7 +11,9 @@ if (php --version | grep -i HipHop > /dev/null); then
     fi
   done
 else
-  echo "extension = mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  pecl install mongodb
+  # This can be used instead once Travis adds mongodb.so to the PHP 7 environment:
+  #echo "extension = mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 fi
 
 echo "MongoDB Server version:"
