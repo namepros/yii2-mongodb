@@ -3,10 +3,15 @@
 # install mongodb
 
 if (php --version | grep -i HipHop > /dev/null); then
-  echo "mongodb does not work on HHVM currently, skipping"
-  exit 0
+  # Attempt to use https://github.com/mongodb/mongo-hhvm-driver
+  for i in ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini ~/.phpenv/versions/$(phpenv version-name)/etc/hhvm/php.ini; do
+    if [ -e "$i" ]; then
+      echo "Found HHVM's php.ini: $i"
+      echo "hhvm.dynamic_extensions[mongodb]=mongodb.so" >> "$i"
+    fi
+  done
 else
-  echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  echo "extension = mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 fi
 
 echo "MongoDB Server version:"
