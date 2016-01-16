@@ -7,28 +7,30 @@ For license information check the [LICENSE](LICENSE.md)-file.
 
 Documentation is at [docs/guide/README.md](docs/guide/README.md).
 
+<!--
 [![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-mongodb/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-mongodb)
 [![Total Downloads](https://poser.pugx.org/yiisoft/yii2-mongodb/downloads.png)](https://packagist.org/packages/yiisoft/yii2-mongodb)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-mongodb.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-mongodb)
+-->
+[![Build Status](https://travis-ci.org/namepros/yii2-mongodb.svg?branch=master)](https://travis-ci.org/namepros/yii2-mongodb)
 
 
 Installation
 ------------
 
-This extension requires [MongoDB PHP Extension](http://us1.php.net/manual/en/book.mongo.php) version 1.5.0 or higher.
+This extension requires [MongoDB PHP Extension](http://php.net/manual/en/class.mongodb.php) (ext-mongodb) version 1.0.0 or higher.  It will *not* work with the obsolete Mongo extension (ext-mongo).
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 Either run
 
 ```
-php composer.phar require --prefer-dist yiisoft/yii2-mongodb
+php composer.phar require --prefer-dist namepros/yii2-mongodb
 ```
 
 or add
 
 ```
-"yiisoft/yii2-mongodb": "~2.0.0"
+"namepros/yii2-mongodb": "~2.0.0"
 ```
 
 to the require section of your composer.json.
