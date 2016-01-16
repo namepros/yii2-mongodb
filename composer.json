@@ -1,15 +1,15 @@
 {
-    "name": "hardsetting/yii2-mongodb",
+    "name": "namepros/yii2-mongodb",
     "description": "MongoDb extension for the Yii framework",
     "keywords": ["yii2", "mongo", "mongodb", "active-record"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2-mongodb/issues",
+        "issues": "https://github.com/namepros/yii2-mongodb/issues",
         "forum": "http://www.yiiframework.com/forum/",
         "wiki": "http://www.yiiframework.com/wiki/",
         "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2-mongodb"
+        "source": "https://github.com/namepros/yii2-mongodb/"
     },
     "authors": [
         {
@@ -19,6 +19,10 @@
         {
             "name": "Gabriele Della Casa Venturelli",
             "email": "hardsetting@gmail.com"
+        },
+        {
+            "name": "Paul Buonopane",
+            "email": "tek7@internal.is"
         }
     ],
     "require": {
